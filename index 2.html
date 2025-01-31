@@ -50,7 +50,80 @@
     
                 // Send post to API
                 $.ajax({
-                    url: 'https://superphone.io/w/my-url', // Url where to submit the request
+                    url: '
+    <!--
+    * You can use callback method for success and fail submit form
+    * submitSuccess()
+    * submitFail()
+    -->
+    <div style="width: 100%; display: flex">
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/libphonenumber-js@1.9.50/bundle/libphonenumber-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/js/intlTelInput-jquery.min.js" integrity="sha512-+xuLsxQN3JBrnBSAr/vOlUqZfQ0OwpqZfdbuiQVpzjd5Y85F8F2AyzP4YNVDrpR29EolzELxc62br5gWK51phQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.superphone.io/widgets/widget.css" />
+    <script src="https://cdn.superphone.io/widgets/widget.min.js"></script>
+  
+
+      <script type="text/javascript">
+        window.sp = {
+          widgetHash: 'G203BE',
+          type: 'page',
+        }
+        
+        // function formError(xhr, textStatus) {
+        //   // Custom code Form error
+        // }
+        // function formSuccess(result) {
+        //   // Custom code FOrm success
+        // }
+      </script>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;600&display=swap");
+      </style>
+
+      <style>
+        #superphone-input-wrapper .phone-input-wrapper {
+          flex: 1;
+        }
+        .phone-input-wrapper .iti__arrow {
+          border-top-color: null;
+          border-bottom-color: null;
+        }
+      </style>
+      <div id="superphone-widget-esential-wrapper" class="superphone-widget" style="font-family: Karla;">
+        <form id="addContact" action="#" method="POST" autocomplete="false">
+          <div id="superphone-input-wrapper">
+            <div class="phone-input-wrapper">
+              <input
+                  style="color: null; background-color: null;"
+                  autocomplete="off"
+                  tabindex="4"
+                  type="tel"
+                  class="superphone-form-control"
+                  id="phone"
+                  name="mobile"
+                  placeholder="Mobile # (w/ country code)"
+              >
+            </div>
+            <div class="superphone-send-button">
+              <button style="background: null; color: rgba(0,0,0,1);font-family: Karla" type="submit" id="submitButton">Send</button>
+            </div>
+          </div>
+          <div id="form-error-message" class="form-error">
+            <div>Something went wrong. Please check your mobile and try again.</div>
+          </div>
+          <div id="form-error-mobile" class="form-error">
+            Phone Number is not valid
+          </div>
+        </form>
+      </div>
+    </div>
+    ', // Url where to submit the request
                     type: "POST",
                     beforeSend: function (request) {
                         request.setRequestHeader("Access-Control-Allow-Origin", "*");
@@ -195,7 +268,7 @@
     <div class="page-center">
     <div class="custom-form">
         <div class="container">
-            <h1 class="text-center" style="font-weight: bold">YOUR NAME HERE</h1>
+            <h1 class="text-center" style="font-weight: bold">Viva la Voodoo</h1>
             <p class="text-center" style="font-size: 21px">PLEASE ENTER YOUR PHONE NUMBER<br>AND I WILL TEXT YOU RIGHT BACK:</p>
             <form id="addContact" class="form-horizontal" style="min-width: 100%" method="POST" action="#" autocomplete="false" data-parsley-validate>
                 <div class="form-group">
